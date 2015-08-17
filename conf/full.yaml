@@ -94,9 +94,13 @@ packages:
 # - unix:/tmp/sinopia.sock    # unix socket
 
 # Configure HTTPS, it is required if you use "https" protocol above.
+# The 'ca' option is optional, but should be used if a CA chain is required.
 #https:
 #  key: path/to/server.key
 #  cert: path/to/server.crt
+#  ca:
+#    - path/to/ca.1.crt
+#    - path/to/ca.2.crt
 
 # type: file | stdout | stderr
 # level: trace | debug | info | http (default) | warn | error | fatal
